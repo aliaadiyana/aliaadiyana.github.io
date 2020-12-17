@@ -1,0 +1,110 @@
+<html>
+<head>
+<style>
+<!--
+.styling{
+background-color:black;
+color:lime;
+font: bold 18px MS Sans Serif;
+padding: 3px;
+}
+-->
+</style>
+<br>
+<title>HOMEPAGE</title>
+</head>
+<body bgcolor="#949494">
+<br>
+<left>
+<span id="digitalclock" class="styling"></span>
+
+<script>
+<!--
+
+/*****************************************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*****************************************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+<br>
+<div id="sfc5qrtqddgp3ctcnu34ywequ185s2m22ju"></div>
+<script type="text/javascript" src="https://counter8.stat.ovh/private/counter.js?c=5qrtqddgp3ctcnu34ywequ185s2m22ju&down=async" async></script>
+<noscript><a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter8.stat.ovh/private/freecounterstat.php?c=5qrtqddgp3ctcnu34ywequ185s2m22ju" border="0" title="website counter" alt="website counter"></a></noscript>
+<br>
+<embed src="sound/bubblegum.mp3" hidden="true" autostart="true"></embed>
+<br>
+<center>
+<img src="images/welcome.png" height="80" width="1300">
+<center>
+<br>
+ <h3><center><font color="#2F4F4F">"This is my secret. My beautiful secret"</font></h3>
+ <font size="60" face="Brush Script MT" color="black"><center><i>ALIAA DIYANA AZIZAN</i><center></font>
+<br>
+<br>
+<table border="1" align="center" cellpadding="10" bgcolor="#f8887f">
+<font color="black"></font>
+<tr>
+ <th width="15%"><a href="index.html" style="text-decoration: none">
+  <font color="Black">Home</a></font></th>
+ <th width="8%"><a href="biodata.html" style="text-decoration: none">
+  <font color="Black">Biodata</a></font></th>
+ <th width="8%"><a href="experience.html" style="text-decoration: none">
+  <font color="Black">Experience</a></font></th>
+ <th width="8%"><a href="education.html" style="text-decoration: none">
+  <font color="Black">Education</a></font></th>
+ <th width="8%"><a href="family.html" style="text-decoration: none">
+  <font color="Black">Family</a></font></th>
+ <th width="8%"><a href="gallery.html" style="text-decoration: none">
+  <font color="Black">Gallery</a></font></th>
+ <th width="15%"><a href="contact.html"><img src="images/socmed.png" height="25" width="130"></a></img></th>
+</tr>
+</table>
+<br>
+<br>
+<table width="35%">
+  <tr>
+    <td><img src="images/me.jpg" height="380" width="360" border="1" align="right"/><br clear="left"/><br>
+Hello, this is my homepage & welcome to my personal website. Here a little introduction of myself & my personal life.
+There are many things I like to do, to see, and to experience. 
+I enjoy reading, and the knowledge and perspective that my reading gives me has strengthened my teaching skills and presentation abilities. 
+I attribute this success to my ability to plan, schedule, and handle many different tasks at once. 
+This flexibility will help me in the classroom, where there are many different personalities and learning styles.
+If you are interested in knowing more, read my websites or take a look at my pictures.
+Do not expect too much, and keep your sense of humor.</td>
+  </tr>
+</table>
+<br>
+</body>
+</html>
